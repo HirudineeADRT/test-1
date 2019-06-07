@@ -1,0 +1,89 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "f57a6099-d2c6-435a-9285-30783e096f65": {
+        "id": "f57a6099-d2c6-435a-9285-30783e096f65",
+        "parent": null,
+        "name": "test-1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "9eeec9c7-70e3-43ef-bafe-d6755a4f4df9"
+        ],
+        "isRemovable": false,
+        "filePath": "test-1"
+      },
+      "9eeec9c7-70e3-43ef-bafe-d6755a4f4df9": {
+        "id": "9eeec9c7-70e3-43ef-bafe-d6755a4f4df9",
+        "parent": "f57a6099-d2c6-435a-9285-30783e096f65",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-1/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "3d4fe19a-61e4-4082-9f54-4c9ea3679637": {
+        "id": "3d4fe19a-61e4-4082-9f54-4c9ea3679637",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.test1function = require(\"./test-1/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "f57a6099-d2c6-435a-9285-30783e096f65",
+    "openFiles": [
+      "9eeec9c7-70e3-43ef-bafe-d6755a4f4df9"
+    ],
+    "currentFileId": "9eeec9c7-70e3-43ef-bafe-d6755a4f4df9",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test-1",
+    "projectDescription": "test",
+    "projectVersion": "1.0.0",
+    "projectRegion": "australia-southeast1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1559897130341
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-1",
+      "url": "https://github.com/HirudineeADRT/test-1"
+    }
+  }
+}
